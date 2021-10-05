@@ -55,7 +55,7 @@ basic.forever(function () {
     basic.pause(60000)
 })
 basic.forever(function () {
-    if (Environment.ReadLightIntensity(AnalogPin.P3) >= 60) {
+    if (Environment.ReadLightIntensity(AnalogPin.P3) <= 60) {
         range = strip.range(0, 20)
         range2 = strip.range(20, 20)
         range.showColor(neopixel.colors(NeoPixelColors.Blue))
